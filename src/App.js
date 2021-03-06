@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { forwardRef } from 'react';
-import Avatar from 'react-avatar';
-import Grid from '@material-ui/core/Grid'
-
+import Grid from '@material-ui/core/Grid';
 import MaterialTable from "material-table";
 import AddBox from '@material-ui/icons/AddBox';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
@@ -73,10 +71,10 @@ function App() {
          .catch(error=>{
              console.log("Error")
          })
-  }, [])
+  }, []);
   
-    const duplicateExists = (val) => {
-      return data.find(row => row?.id == val?.id && row?.first_name == val?.first_name && row?.last_name == row?.last_name);
+  const duplicateExists = (val) => {
+      return data.find(row => row?.id === val?.id && row?.first_name === val?.first_name && row?.last_name === val?.last_name);
   }
 
   const getDataSize = () => {
