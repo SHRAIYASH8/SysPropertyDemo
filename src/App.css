@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  background: rgb(238,174,202);
+  background: -moz-radial-gradient(circle, rgba(238,174,202,1) 5%, rgba(148,187,233,1) 43%);
+  background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 5%, rgba(148,187,233,1) 43%);
+  background: radial-gradient(circle, rgba(238,174,202,1) 5%, rgba(148,187,233,1) 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);display: flex;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.MTableToolbar-title-9{
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	font-family: 'Orienta', sans-serif;
+}
+
+.errorText{
+  background: #c51244 !important;
+  padding: 5px !important;
+  border-radius: 0 !important;
+  position: sticky; 
+  box-shadow: 1px 1px 1px #aaaaaa;
+}
