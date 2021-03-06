@@ -47,7 +47,7 @@ const api = axios.create({
 
 
 function validateUrl(url){
-    var patt = new RegExp(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/);
+    var patt = new RegExp(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-]))?/);
     return patt.test(url);
 }
 
