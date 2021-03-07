@@ -47,7 +47,7 @@ const api = axios.create({
 
 
 function validateUrl(url){
-    var patt = new RegExp(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-]))?/);
+    var patt = new RegExp(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!]))?/);
     return patt.test(url);
 }
 
@@ -62,7 +62,7 @@ function App() {
   const [iserror, setIserror] = useState(false)
   const [errorMessages, setErrorMessages] = useState([])
   const allowedList = ['dih.console.username','dih.console.password','dih.console.url','dih.console.accessmode'];
-  useEffect(() => { 
+  useEffect((allowedList) => { 
     api.get("/users")
         .then(res => {  
             res.data.data.filter(dt => allowedList.includes(dt.first_name));
