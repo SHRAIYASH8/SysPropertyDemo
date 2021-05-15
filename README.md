@@ -1,11 +1,3 @@
-## Available Scripts
+https://shraiyashsystemproperty.netlify.app/
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/31364768/118359697-51678400-b5a2-11eb-9bd9-87c612989446.png)
